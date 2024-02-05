@@ -1,0 +1,76 @@
+html {
+  background: #f2f1f4;
+  color: #19171c;
+}
+
+.accordion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.title,
+.description {
+  border: 2px solid #ccc;
+  border-radius: 7px;
+  padding: 10px;
+  background-color: #fff;
+  height: 60px;
+}
+
+.title {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.description {
+  display: none;
+  height: inherit;
+}
+
+.active + .description {
+  display: block;
+}
+
+#Question1 {
+  background-color: #ffd700;
+}
+
+#Question2 {
+  background-color: #ffa07a;
+}
+
+#Question3 {
+  background-color: #ffd700;
+}
+
+#Question4 {
+  background-color: #ffa07a;
+}
+
+.title {
+  display: flex;
+  cursor: pointer;
+}
+
+.toggle-btn {
+  color: #333;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: lightgray;
+  font-size: 20px;
+}
+
+.toggle-btn.active {
+  background-color: red;
+  visibility: visible;
+}
+.active + .description {
+  display: block;
+}
