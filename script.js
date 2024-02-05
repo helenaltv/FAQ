@@ -13,7 +13,6 @@ async function getPosts() {
       const titleElement = document.getElementById(`Question${index + 1}`);
       titleElement.textContent = `Question ${index + 1}`;
 
-      // Lägg till en knapp i varje titel
       const toggleBtn = document.createElement("button");
       toggleBtn.classList.add("toggle-btn");
       toggleBtn.textContent = "+";
